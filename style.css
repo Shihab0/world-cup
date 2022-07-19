@@ -193,3 +193,72 @@ hr{
     text-decoration: none;
 }
 
+/* --------------------------
+          Media Query
+          For Mobile
+---------------------------- */
+
+@media screen and (max-width: 668px) {
+    .top-section{
+        padding-top: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .top-section h1{
+        font-size: 22px;
+        line-height: 33px;
+    }
+    .top-section p{
+        font-size: 14px;
+    }
+    .top-section img{
+        width: 233px;
+        height: 245px;
+    }
+
+    /* -------------------------- */
+
+    .blogs-section{
+        margin-top: 0px;
+    }
+
+    .fixed-nav{
+        position: unset;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 70%;
+        height: 260px;
+        background-color: #fff;
+        padding: 0;
+    }
+    .nav-btn{
+        margin: 10px auto;
+        width: 200px;
+        height: 60px;
+        border: none;
+    }
+     .blogs{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px auto;
+        justify-items: center;
+     }
+     .blog-card {
+        width: 420px;
+        height: 425px;
+      }
+     .blog-card img {
+        width: 420px;
+        height: 240px;
+    }
+     
+     .footer-area{
+        flex-direction: column;
+    }
+    .footer-area ul{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
