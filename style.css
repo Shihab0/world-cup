@@ -89,14 +89,17 @@ body{
 }
 .nav-btn{
     margin-bottom: 30px;
-    width: 252px;
+    width: 254px;
     height: 64px;
     border-radius: 10px;
     background-color: #faeeee;
+    cursor: pointer;
+}
+.nav-btn a{
+    text-decoration: none;
     color: #161616;
     font-weight: 500;
-    font-size: 20px;
-    cursor: pointer;
+    font-size: 20px;    
 }
 .active{
     margin-bottom: 30px;
@@ -104,10 +107,12 @@ body{
     height: 64px;
     border-radius: 10px;
     background-color: #e44545;
+    cursor: pointer;    
+}
+.active a{
     color: #faeeee;
     font-weight: 500;
     font-size: 20px;
-    cursor: pointer;    
 }
 .blog-card{
     width: 312px;
@@ -194,6 +199,40 @@ hr{
     font-size: 16px;
     color: #B9B9B9;
     text-decoration: none;
+}
+
+/* --------------------------
+  For upcoming match button
+---------------------------- */
+.flag-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 40px;
+}
+.flag-card{
+    width: 312px;
+    height: 242px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #d7c1c1;
+}
+.flag{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flag img{
+    width: 93px;
+    height: 55px;
+}
+.flag-card h3{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+.flag-card p{
+    text-align: center;
 }
 
 /* --------------------------
@@ -363,6 +402,9 @@ hr{
         column-gap: 60px; 
     }
 }
+
+
+
 
 /* ----------End------------ */
 
