@@ -252,8 +252,11 @@ hr{
         width: 420px;
         height: 240px;
     }
-     
+     footer{
+        margin-top: 70px;
+     }
      .footer-area{
+        margin-top: 0;
         flex-direction: column;
     }
     .footer-area ul{
