@@ -150,6 +150,9 @@ body{
 .blog-card .icon i{
     margin-right: 10px;
 }
+.div-btn{
+    display: none;
+}
 
 /* --------------------------
           Footer
@@ -244,6 +247,7 @@ hr{
         width: 200px;
         height: 60px;
         border: none;
+        font-size: 16px;
     }
      .blogs{
         grid-template-columns: repeat(1, 1fr);
@@ -258,6 +262,11 @@ hr{
         width: 390px;
         height: 240px;
     }
+    .div-btn{
+        display: none;
+    }
+    /* ---------------------- */
+
      footer{
         margin-top: 70px;
      }
@@ -271,3 +280,115 @@ hr{
         margin-bottom: 20px;
     }
 }
+
+/* --------------------------
+          Media Query
+          For Tablet
+---------------------------- */
+
+@media screen and (min-width: 668px) and (max-width: 992px) {
+    
+    .top-section{
+        padding: 15px 30px;
+
+    }
+
+    .top-section h1{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .top-section p{
+        font-size: 16px;
+    }
+    .top-section img{
+        width: 375px;
+        height: 412px;
+    }
+    
+    /* --------------------- */
+
+    .blogs-section{
+        margin-top: 30px;
+    }
+
+    .fixed-nav{
+        position: unset;
+        display: flex;
+        justify-content: center;
+        gap: 25px;      
+        width: 90%;
+        height: 160px;
+        margin: 0 auto;
+        background-color: #fff;   
+    }
+    .nav-btn{
+        margin: 10px auto;
+        width: 200px;
+        height: 60px;
+        border: none;
+        font-size: 16px;
+    }
+     .blogs{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0px auto;
+        justify-items: center;
+     }
+     .blog-card {
+        width: 350px;
+        height: 425px;
+      }
+     .blog-card img {
+        width: 350px;
+        height: 240px;
+    }
+    article:nth-last-child(9){
+        display: none;
+    }
+    .div-btn{
+        display: block;
+        width: 100%; 
+        text-align: center;
+        margin-top: 30px;
+    }
+    /* ----------------------- */
+
+    footer{
+        margin-top: 50px;
+    }
+    .footer-area ul{
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 60px; 
+    }
+}
+
+/* ----------End------------ */
+
+
+
+
+
+
+
+
+/* Not for Assignment  */
+
+/* 
+@media screen and (min-width: 992px) and (max-width: 1450px){
+
+    .blogs{
+        grid-template-columns: repeat(2, 1fr);
+         margin: 0px auto;
+        justify-items: center;
+        margin-left: 340px;
+     }
+     article:nth-last-child(9){
+        display: none;
+    }
+}
+ */
+
+
+
