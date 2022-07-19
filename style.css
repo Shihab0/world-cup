@@ -218,6 +218,10 @@ hr{
 
     /* -------------------------- */
 
+    .container{
+        width: 100%;
+        margin: 0;
+    }
     .blogs-section{
         margin-top: 0px;
     }
