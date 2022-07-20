@@ -33,7 +33,39 @@ body{
     padding: 10px 80px;
     background: #161616;
     border-radius: 30px;
+    position: relative;
 }
+/* --------------------------
+         animation start
+---------------------------- */
+.ball-animation{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.animation-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.ball-animation{
+    animation: bouncing 2s ease-in-out infinite alternate;
+}
+@keyframes bouncing{
+    0%{
+        top: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+    100%{
+        top: 89%;
+        transform: rotate(180deg);
+    }
+}
+/* --------------------------
+         animation end
+---------------------------- */
+
 .top-section h1{
     font-weight: 700;
     font-size: 60px;
@@ -64,13 +96,13 @@ body{
 .cool-btn i{
     margin-left: 2px;
 }
-.top-section img{
+.top-section-img img{
     width: 500px;
     height: 600px;
     transition: 1s;
 }
-.top-section img:hover{
-    transform: scale(0.95);
+.top-section-img img:hover {
+    transform: scale(0.9);
 }
 /* --------------------------
          Blogs Section
@@ -289,7 +321,7 @@ hr{
         text-overflow: ellipsis;
         font-size: 14px;
     }
-    .top-section img{
+    .top-section-img img{
         width: 233px;
         height: 245px;
     }
@@ -379,7 +411,7 @@ hr{
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .top-section img{
+    .top-section-img img{
         width: 375px;
         height: 412px;
     }
