@@ -146,6 +146,7 @@ body{
     color: #161616;
     margin-left: 20px;
     margin-bottom: 15px;
+    background-color: #fad4d4;
 }
 .blog-card p{
     width: 272px;
@@ -370,9 +371,13 @@ hr{
     .top-section h1{
         font-size: 40px;
         line-height: 50px;
+        margin-top: 30px;
     }
     .top-section p{
         font-size: 16px;
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
     .top-section img{
         width: 375px;
